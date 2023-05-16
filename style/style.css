@@ -1,6 +1,16 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    /*height: 5rem;*/
+    height: 7rem;
+    box-shadow: 0px 0.5px 0.5px 1px rgba(0, 0, 0, 0.25);
 }
 
 .header a {
@@ -8,6 +18,11 @@
     text-align: center;
     color: gray;
 }
+
+.header a:hover {
+    color: #000;
+}
+
 
 .sr-only {
     border: 0;
@@ -22,6 +37,7 @@
 
 .mobile-btn {
     padding: 1rem;
+    font-size: 2rem;
 }
 
 @media (min-width:900px) {
@@ -62,14 +78,17 @@
     font-family: rock salt, sans-serif;
 }
 
+.topnav li {
+    font-size: 1.2rem;
+}
+
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    height: 80%;
-    padding: 0.7rem;
+    height: 100%;
     cursor: pointer;
 }
 
@@ -79,7 +98,7 @@
     text-decoration: none;
     background-color: #ffd109;
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 1.5rem 3rem;
     border-radius: 0.8rem 0.8rem;
     cursor: pointer;
